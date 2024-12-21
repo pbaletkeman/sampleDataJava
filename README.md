@@ -1,3 +1,5 @@
+Programed and tested with Java 21
+
 A simple Command Line program to generate some sample records.
 
 #### Command Line options, everything is optional:
@@ -11,7 +13,7 @@ A simple Command Line program to generate some sample records.
 - commerce: number of Commerce records to create
 - food: number of Food records to create
 
-#### examples:
+#### example command lines:
 - java -jar sample-data.jar file:datafile.db book:10 person:10 business:10 commerce:10 food:1000
 
 - java -jar sample-data.jar file:test.db buffy:1000 ancient:10 
