@@ -1,4 +1,4 @@
-Programed and tested with Java 21
+Programmed and tested with Java 21
 
 A simple Command Line program to generate some sample records.
 
