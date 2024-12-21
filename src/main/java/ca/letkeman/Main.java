@@ -16,7 +16,7 @@ public class Main {
 
   public static void main(String[] args) {
 logger.info("command line parameters, everythng is optional:");
-logger.info(" file:filename buffy:#records ancient:#records beer:#records book:#records person:#records business:#records commerce:#recordsfood:#records");
+logger.info(" file:filename buffy:#records ancient:#records beer:#records book:#records person:#records business:#records commerce:#records food:#records");
 logger.info("e.g.:\nfile:test.db buffy:10 ancient:10 beer:10 book:10 person:10 business:10 commerce:10 food:10");
     Main m = new Main();
     m.createData(args);
