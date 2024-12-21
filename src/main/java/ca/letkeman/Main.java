@@ -194,7 +194,7 @@ logger.info("e.g.:\nfile:test.db buffy:10 ancient:10 beer:10 book:10 person:10 b
   }
 
   private void createBook(int numOfRecs, java.sql.Connection conn, boolean drop) {
-    String createTable = "CREATE TABLE IF NOT EXISTS book (id INTEGER PRIMARY KEY, genre TEXT, publisher TEXT, author TEXT, title, isbn13 TEXT);";
+    String createTable = "CREATE TABLE IF NOT EXISTS book (id INTEGER PRIMARY KEY, genre TEXT, publisher TEXT, author TEXT, title TEXT, isbn13 TEXT);";
     String sqlString = "INSERT INTO book (genre, publisher, author, title, isbn13) VALUES (?, ?, ?, ?, ?);";
     String deleteTable = "DROP TABLE IF EXISTS book";
     if (drop) {
@@ -274,7 +274,7 @@ logger.info("e.g.:\nfile:test.db buffy:10 ancient:10 beer:10 book:10 person:10 b
 
   private void createBusiness(int numOfRecs, java.sql.Connection conn, boolean drop) {
     String createTable = "CREATE TABLE IF NOT EXISTS business (id INTEGER PRIMARY KEY, creditCardExpiry TEXT, creditCardNumber TEXT, creditCardType TEXT, code TEXT, name TEXT);";
-    String sqlString = "INSER INTO business (creditCardExpiry, creditCardNumber, creditCardType, code, name) VALUES (?, ?, ?, ?, ?);";
+    String sqlString = "INSERT INTO business (creditCardExpiry, creditCardNumber, creditCardType, code, name) VALUES (?, ?, ?, ?, ?);";
     String deleteTable = "DROP TABLE IF EXISTS business";
     if (drop) {
       try (Statement stmt = conn.createStatement()) {
